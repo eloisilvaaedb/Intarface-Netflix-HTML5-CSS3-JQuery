@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  owlcarousel:
+    image: owlcarousel
+    build:
+      context: js/owl/OwlCarousel2-2.3.4
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
